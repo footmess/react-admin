@@ -6,7 +6,7 @@ export default [
     component: '../layouts/UserLayout',
     routes: [
       { path: '/user', redirect: '/user/login' },
-      { path: '/user/login', component: './User/Login' },
+      { path: '/user/login', component: './user/Login' },
     ],
   },
   // app
@@ -25,7 +25,7 @@ export default [
           {
             path: '/dashbboard/workplace',
             name: 'workplace',
-            component: './Dashboard/Workplace',
+            component: './dashboard/Workplace',
           },
         ],
       },
@@ -37,7 +37,7 @@ export default [
           {
             path: '/otherUser/list',
             name: 'list',
-            component: './OtherUser/List',
+            component: './otherUser/List',
           },
         ],
       },
@@ -49,12 +49,12 @@ export default [
           {
             path: '/article/list',
             name: 'list',
-            component: './Article/List',
+            component: './article/List',
           },
           {
             path: '/article/create',
             name: 'create',
-            componet: './Article/ArticleCreate',
+            componet: './article/ArticleCreate',
           },
         ],
       },
@@ -66,7 +66,7 @@ export default [
           {
             path: '/message/list',
             name: 'list',
-            component: './Message/List',
+            component: './message/List',
           },
         ],
       },
@@ -78,7 +78,7 @@ export default [
           {
             path: '/tag/list',
             name: 'list',
-            component: './Tag/List',
+            component: './tag/List',
           },
         ],
       },
@@ -90,7 +90,7 @@ export default [
           {
             path: '/link/list',
             nameL: 'list',
-            components: './Link/List',
+            components: './link/List',
           },
         ],
       },
@@ -102,7 +102,7 @@ export default [
           {
             path: '/category/list',
             name: 'list',
-            component: './Category/List',
+            component: './category/List',
           },
         ],
       },
@@ -114,7 +114,7 @@ export default [
           {
             path: '/timeAxis/list',
             name: 'list',
-            component: './TimeAxis/List',
+            component: './timeAxis/List',
           },
         ],
       },
@@ -126,7 +126,7 @@ export default [
           {
             path: '/project/list',
             name: 'list',
-            component: './Project/List',
+            component: './project/List',
           },
         ],
       },
@@ -138,23 +138,23 @@ export default [
           {
             path: '/exception/403',
             name: 'not-permission',
-            component: './Exception/403',
+            component: './exception/403',
           },
           {
             path: '/exception/404',
             name: 'not-found',
-            component: './Exception/404',
+            component: './exception/404',
           },
           {
             path: '/exception/500',
             name: 'server-error',
-            component: './Exception/500',
+            component: './exception/500',
           },
           {
             path: '/exception/trigger',
             name: 'trigger',
             hideInMenu: true,
-            component: './Exception/TriggerException',
+            component: './exception/TriggerException',
           },
         ],
       },
@@ -166,7 +166,7 @@ export default [
           {
             path: '/account/settings',
             name: 'settings',
-            component: './Account/Setting/Info',
+            component: './account/Setting/Info',
             routes: [
               {
                 path: '/account/settings',
@@ -174,11 +174,11 @@ export default [
               },
               {
                 path: '/account/settings/base',
-                component: './Account/Settings/BaseView',
+                component: './account/Settings/BaseView',
               },
               {
                 path: '/account/setting/personalLink',
-                component: './Account/Settings/PersonalLinkView',
+                component: './account/Settings/PersonalLinkView',
               },
             ],
           },
