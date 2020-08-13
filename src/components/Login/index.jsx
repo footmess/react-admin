@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Form, Tabs } from 'antd';
+// A simple JavaScript utility for conditionally joining classNames together.
+// classNames('foo', 'bar'); // => 'foo bar'
 import classNames from 'classnames';
 import LoginItem from './LoginItem';
 import LoginTab from './LoginTab';

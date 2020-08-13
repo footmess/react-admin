@@ -1,4 +1,6 @@
 import React from 'react';
+// A simple JavaScript utility for conditionally joining classNames together.
+// classNames('foo', 'bar'); // => 'foo bar'
 import classNames from 'classnames';
 import styles from './index.less';
 
