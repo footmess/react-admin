@@ -1,6 +1,5 @@
 import React from 'react';
 import { CURRENT } from './renderAuthorize'; // eslint-disable-next-line import/no-cycle
-
 import PromiseRender from './PromiseRender';
 
 /**
@@ -20,7 +19,7 @@ const checkPermissions = (authority, currentAuthority, target, Exception) => {
 
   if (Array.isArray(authority)) {
     if (Array.isArray(currentAuthority)) {
-      if (currentAuthority.some(item => authority.includes(item))) {
+      if (currentAuthority.some((item) => authority.includes(item))) {
         return target;
       }
     } else if (authority.includes(currentAuthority)) {
@@ -32,7 +31,7 @@ const checkPermissions = (authority, currentAuthority, target, Exception) => {
 
   if (typeof authority === 'string') {
     if (Array.isArray(currentAuthority)) {
-      if (currentAuthority.some(item => authority === item)) {
+      if (currentAuthority.some((item) => authority === item)) {
         return target;
       }
     } else if (authority === currentAuthority) {
